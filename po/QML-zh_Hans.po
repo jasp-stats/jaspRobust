@@ -1,0 +1,743 @@
+msgid ""
+msgstr ""
+"X-Qt-Contexts: true\n"
+"X-Language: zh_Hans\n"
+"X-Source-Language: American English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+
+msgctxt "Description|"
+msgid "Robust Statistics"
+msgstr "稳健统计"
+
+msgctxt "Description|"
+msgid "Robust versions of classical statistical analyses"
+msgstr "经典统计分析方法的稳健版本"
+
+msgctxt "Description|"
+msgid "Robust Classical Analyses"
+msgstr "稳健经典分析"
+
+msgctxt "Description|"
+msgid "Robust ANOVA"
+msgstr "稳健方差分析"
+
+msgctxt "Description|"
+msgid "Robust Repeated Measures ANOVA"
+msgstr "稳健重复测量方差分析"
+
+msgctxt "Description|"
+msgid "Robust ANCOVA"
+msgstr "稳健协方差分析"
+
+msgctxt "Description|"
+msgid "Robust Linear Regression"
+msgstr "稳健线性回归"
+
+msgctxt "Description|"
+msgid "Robust Correlation"
+msgstr "稳健相关"
+
+msgctxt "AncovaRobust|"
+msgid ""
+"Robust ANCOVA compares trimmed means of exactly two groups while adjusting for"
+"a covariate, using a nonparametric running interval smoother. No parametric"
+"assumptions about homogeneity of regression slopes or equal variances are"
+"required. Without a covariate, a robust one-way ANOVA is performed instead."
+msgstr ""
+"稳健协方差分析使用非参数滑动区间平滑器，在调整协变量的同时比较恰好两个组的截尾均值。"
+"无需关于回归斜率同质性或方差相等的参数假设。当没有协变量时，则执行稳健单因素方差分析。"
+
+msgctxt "AncovaRobust|"
+msgid "Assumptions"
+msgstr "假设"
+
+msgctxt "AncovaRobust|"
+msgid "The independent variable is categorical with exactly two levels."
+msgstr "自变量为分类型，且恰好具有两个水平。"
+
+msgctxt "AncovaRobust|"
+msgid "The dependent variable and covariate are continuous."
+msgstr "因变量和协变量为连续型。"
+
+msgctxt "AncovaRobust|"
+msgid "The groups are independent."
+msgstr "各组是独立的。"
+
+msgctxt "AncovaRobust|"
+msgid "Dependent Variable"
+msgstr "因变量"
+
+msgctxt "AncovaRobust|"
+msgid "The continuous outcome variable."
+msgstr "连续结果变量。"
+
+msgctxt "AncovaRobust|"
+msgid "Fixed Factor"
+msgstr "固定因子"
+
+msgctxt "AncovaRobust|"
+msgid "A categorical grouping variable with exactly two levels."
+msgstr "恰好具有两个水平的分类型分组变量。"
+
+msgctxt "AncovaRobust|"
+msgid "Covariate"
+msgstr "协变量"
+
+msgctxt "AncovaRobust|"
+msgid "An optional continuous covariate to adjust for."
+msgstr "用于调整的可选连续协变量。"
+
+msgctxt "AncovaRobust|"
+msgid "Additional Statistics"
+msgstr "附加统计"
+
+msgctxt "AncovaRobust|"
+msgid "Descriptives"
+msgstr "描述统计"
+
+msgctxt "AncovaRobust|"
+msgid ""
+"Per-group sample size, trimmed mean, median, Winsorized standard deviation,"
+"and median absolute deviation for the dependent variable and each covariate."
+msgstr ""
+"因变量和每个协变量的每组样本量、截尾均值、中位数、温索化标准差和中位数绝对偏差。"
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid ""
+"Robust Repeated Measures ANOVA analyzes differences between dependent group"
+"means using robust methods from the WRS2 package. No assumptions of normality,"
+"homogeneity, or sphericity are required."
+msgstr ""
+"稳健重复测量方差分析使用WRS2包中的稳健方法来分析相关组均值之间的差异。"
+"无需正态性、同质性或球形性假设。"
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid "Assumptions"
+msgstr "假设"
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid "The dependent variable is continuous."
+msgstr "因变量为连续型。"
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid "Repeated Measures Factor"
+msgstr "重复测量因子"
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid "RM Factor"
+msgstr "重复测量因子"
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid "Repeated Measures Cells"
+msgstr "重复测量单元格"
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid "Between Subject Factor"
+msgstr "被试间因子"
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid "Optional single between-subjects grouping variable for mixed designs."
+msgstr "用于混合设计的可选单一被试间分组变量。"
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid "Additional Statistics"
+msgstr "附加统计"
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid "Descriptives"
+msgstr "描述统计"
+
+msgctxt "AnovaRobust|"
+msgid ""
+"Robust ANOVA analyzes differences between group means using robust methods"
+"from the WRS2 package. These methods do not assume normality or homogeneity of"
+"variances."
+msgstr ""
+"稳健方差分析使用WRS2包中的稳健方法来分析组均值之间的差异。"
+"这些方法不假设正态性或方差齐性。"
+
+msgctxt "AnovaRobust|"
+msgid "Assumptions"
+msgstr "假设"
+
+msgctxt "AnovaRobust|"
+msgid ""
+"The independent variables are categorical, the dependent variable is"
+"continuous."
+msgstr "自变量为分类型，因变量为连续型。"
+
+msgctxt "AnovaRobust|"
+msgid "The groups are independent."
+msgstr "各组是独立的。"
+
+msgctxt "AnovaRobust|"
+msgid "Dependent Variable"
+msgstr "因变量"
+
+msgctxt "AnovaRobust|"
+msgid "The continuous outcome variable."
+msgstr "连续结果变量。"
+
+msgctxt "AnovaRobust|"
+msgid "Fixed Factors"
+msgstr "固定因子"
+
+msgctxt "AnovaRobust|"
+msgid "Additional Statistics"
+msgstr "附加统计"
+
+msgctxt "AnovaRobust|"
+msgid "Descriptives"
+msgstr "描述统计"
+
+msgctxt "AnovaRobust|"
+msgid "Robust effect sizes"
+msgstr "稳健效应量"
+
+msgctxt "CorrelationRobust|"
+msgid "Assumptions"
+msgstr "假设"
+
+msgctxt "CorrelationRobust|"
+msgid "Variables"
+msgstr "变量"
+
+msgctxt "CorrelationRobust|"
+msgid ""
+"Two or more continuous variables. All pairwise robust correlations are"
+"reported."
+msgstr "两个或更多连续变量。报告所有成对的稳健相关系数。"
+
+msgctxt "CorrelationRobust|"
+msgid "Options"
+msgstr "选项"
+
+msgctxt "CorrelationRobust|"
+msgid "Method"
+msgstr "方法"
+
+msgctxt "CorrelationRobust|"
+msgid ""
+"Percentage bend correlation downweights values in the tails. Winsorized"
+"correlation replaces extreme values with less extreme ones before computing"
+"the correlation."
+msgstr ""
+"百分比弯曲相关对尾部的值进行降权。温索化相关在计算相关之前用不太极端的值替换极端值。"
+
+msgctxt "CorrelationRobust|"
+msgid "Percentage bend"
+msgstr "百分比弯曲"
+
+msgctxt "CorrelationRobust|"
+msgid "Winsorized"
+msgstr "温索化"
+
+msgctxt "CorrelationRobust|"
+msgid "Trimming proportion"
+msgstr "截尾比例"
+
+msgctxt "CorrelationRobust|"
+msgid ""
+"Bending constant β for percentage bend correlation, or Winsorization"
+"proportion for the Winsorized correlation. Also used for the descriptives"
+"table. Default is 0.2."
+msgstr ""
+"百分比弯曲相关的弯曲常数β，或温索化相关的温索化比例。也用于描述统计表。默认值为0.2。"
+
+msgctxt "CorrelationRobust|"
+msgid "Sample size"
+msgstr "样本量"
+
+msgctxt "CorrelationRobust|"
+msgid "Display the number of complete pairwise observations used in each correlation."
+msgstr "显示每个相关中使用的完整成对观测的数量。"
+
+msgctxt "CorrelationRobust|"
+msgid "Flag significant correlations"
+msgstr "标记显著相关"
+
+msgctxt "CorrelationRobust|"
+msgid "Descriptives"
+msgstr "描述统计"
+
+msgctxt "CorrelationRobust|"
+msgid ""
+"Per-variable sample size, trimmed mean, median, Winsorized standard deviation,"
+"and median absolute deviation."
+msgstr "每个变量的样本量、截尾均值、中位数、温索化标准差和中位数绝对偏差。"
+
+msgctxt "CorrelationRobust|"
+msgid "Alternative hypothesis"
+msgstr "备择假设"
+
+msgctxt "CorrelationRobust|"
+msgid ""
+"Specify the directional hypothesis used to compute the p-value of each"
+"correlation."
+msgstr "指定用于计算每个相关的p值的方向性假设。"
+
+msgctxt "CorrelationRobust|"
+msgid "Test whether the correlation differs from zero in either direction."
+msgstr "检验相关是否在任一方向上与零不同。"
+
+msgctxt "CorrelationRobust|"
+msgid "Positively correlated"
+msgstr "正相关"
+
+msgctxt "CorrelationRobust|"
+msgid "Test whether the correlation is greater than zero."
+msgstr "检验相关是否大于零。"
+
+msgctxt "CorrelationRobust|"
+msgid "Negatively correlated"
+msgstr "负相关"
+
+msgctxt "CorrelationRobust|"
+msgid "Test whether the correlation is less than zero."
+msgstr "检验相关是否小于零。"
+
+msgctxt "CorrelationRobust|"
+msgid "Plots"
+msgstr "图表"
+
+msgctxt "CorrelationRobust|"
+msgid "Scatter plots"
+msgstr "散点图"
+
+msgctxt "CorrelationRobust|"
+msgid ""
+"Displays scatter plots with marginal density plots and a linear regression"
+"line for each pair of variables."
+msgstr ""
+"为每对变量显示带有边际密度图和线性回归线的散点图。"
+
+msgctxt "RegressionLinearRobust|"
+msgid "Assumptions"
+msgstr "假设"
+
+msgctxt "RegressionLinearRobust|"
+msgid "Dependent Variable"
+msgstr "因变量"
+
+msgctxt "RegressionLinearRobust|"
+msgid "The continuous outcome variable to be regressed on the predictors."
+msgstr "要在预测变量上进行回归的连续结果变量。"
+
+msgctxt "RegressionLinearRobust|"
+msgid "Covariates"
+msgstr "协变量"
+
+msgctxt "RegressionLinearRobust|"
+msgid "Continuous predictors entered as numeric covariates."
+msgstr "作为数值协变量输入的连续预测变量。"
+
+msgctxt "RegressionLinearRobust|"
+msgid "Factors"
+msgstr "因子"
+
+msgctxt "RegressionLinearRobust|"
+msgid ""
+"Categorical predictors. Each factor is dummy coded with the first level as the"
+"reference."
+msgstr "分类型预测变量。每个因子以第一个水平为参照进行虚拟编码。"
+
+msgctxt "RegressionLinearRobust|"
+msgid "Estimation method"
+msgstr "估计方法"
+
+msgctxt "RegressionLinearRobust|"
+msgid "MM-estimation"
+msgstr "MM估计"
+
+msgctxt "RegressionLinearRobust|"
+msgid "Statistics"
+msgstr "统计"
+
+msgctxt "RegressionLinearRobust|"
+msgid "Coefficients"
+msgstr "系数"
+
+msgctxt "RegressionLinearRobust|"
+msgid "Estimates"
+msgstr "估计值"
+
+msgctxt "RegressionLinearRobust|"
+msgid ""
+"Display the estimated regression coefficients with standard errors, Wald"
+"t-statistics, and p-values."
+msgstr "显示带标准误、Wald t统计量和p值的估计回归系数。"
+
+msgctxt "RegressionLinearRobust|"
+msgid "Confidence intervals"
+msgstr "置信区间"
+
+msgctxt "RegressionLinearRobust|"
+msgid ""
+"Display Wald-type confidence intervals for the regression coefficients at the"
+"chosen confidence level."
+msgstr "在所选置信水平下显示回归系数的Wald型置信区间。"
+
+msgctxt "RegressionLinearRobust|"
+msgid "Descriptives"
+msgstr "描述统计"
+
+msgctxt "RegressionLinearRobust|"
+msgid ""
+"Per-variable sample size, trimmed mean, median, Winsorized standard deviation,"
+"and median absolute deviation for the dependent variable and each covariate."
+"The trimming proportion is used only for these descriptives; the robust"
+"regression fit itself uses the chosen estimation method."
+msgstr ""
+"因变量和每个协变量的每个变量的样本量、截尾均值、中位数、温索化标准差和中位数绝对偏差。"
+"截尾比例仅用于这些描述统计；稳健回归拟合本身使用所选估计方法。"
+
+msgctxt "RegressionLinearRobust|"
+msgid "Trimming proportion"
+msgstr "截尾比例"
+
+msgctxt "RegressionLinearRobust|"
+msgid ""
+"Trimming proportion used for the trimmed mean and Winsorized SD in the"
+"descriptives table. Default is 0.2."
+msgstr "用于描述统计表中的截尾均值和温索化标准差的截尾比例。默认值为0.2。"
+
+msgctxt "RegressionLinearRobust|"
+msgid "Plots"
+msgstr "图表"
+
+msgctxt "RegressionLinearRobust|"
+msgid "Residual Plots"
+msgstr "残差图"
+
+msgctxt "RegressionLinearRobust|"
+msgid "Residuals vs. fitted"
+msgstr "残差对拟合值"
+
+msgctxt "RegressionLinearRobust|"
+msgid ""
+"Plot residuals against fitted values with a loess smoother to inspect non-"
+"linearity or heteroscedasticity that survives the robust fit."
+msgstr ""
+"使用loess平滑器绘制残差对拟合值，以检查稳健拟合后仍存在的非线性或异方差性。"
+
+msgctxt "RegressionLinearRobust|"
+msgid "Q-Q plot of residuals"
+msgstr "残差的Q-Q图"
+
+msgctxt "RegressionLinearRobust|"
+msgid ""
+"Normal quantile-quantile plot of the standardised residuals to assess the"
+"residual distribution."
+msgstr "标准化残差的正态分位数-分位数图，用于评估残差分布。"
+
+msgctxt "RegressionLinearRobust|"
+msgid "Other Plots"
+msgstr "其他图表"
+
+msgctxt "RegressionLinearRobust|"
+msgid "Robust weights"
+msgstr "稳健权重"
+
+msgctxt "OutlierComponent|"
+msgid "Residuals"
+msgstr "残差"
+
+msgctxt "OutlierComponent|"
+msgid "Statistics"
+msgstr "统计"
+
+msgctxt "OutlierComponent|"
+msgid "Displays descriptive statistics of the residuals and predicted values."
+msgstr "显示残差和预测值的描述统计。"
+
+msgctxt "OutlierComponent|"
+msgid "Casewise diagnostics"
+msgstr "逐案例诊断"
+
+msgctxt "OutlierComponent|"
+msgid "Std. residual >"
+msgstr "标准化残差 >"
+
+msgctxt "OutlierComponent|"
+msgid "Cook's dist. >"
+msgstr "Cook距离 >"
+
+msgctxt "OutlierComponent|"
+msgid "All"
+msgstr "全部"
+
+msgctxt "OutlierComponent|"
+msgid "DFBETAS"
+msgstr "DFBETAS"
+
+msgctxt "OutlierComponent|"
+msgid ""
+"The difference between a parameter estimated using all cases and estimated"
+"when one case is excluded. Indicated in the table when the absolute value of"
+"DFBETAS is greater than 1."
+msgstr ""
+"使用所有案例估计的参数与排除一个案例后估计的参数之间的差异。当DFBETAS的绝对值大于1时在表中标出。"
+
+msgctxt "OutlierComponent|"
+msgid "DFFITS"
+msgstr "DFFITS"
+
+msgctxt "OutlierComponent|"
+msgid "Cov ratio"
+msgstr "协变比"
+
+msgctxt "OutlierComponent|"
+msgid "Leverage"
+msgstr "杠杆值"
+
+msgctxt "OutlierComponent|"
+msgid ""
+"The influence of the observed value of the outcome variable over the predicted"
+"values. Indicated in the table when the leverage is greater than 3 * k/n."
+msgstr ""
+"结果变量的观测值对预测值的影响。当杠杆值大于3 * k/n时在表中标出。"
+
+msgctxt "OutlierComponent|"
+msgid "Mahalanobis"
+msgstr "马氏距离"
+
+msgctxt "RainCloudPlots|"
+msgid "Raincloud Plots"
+msgstr "雨云图"
+
+msgctxt "RainCloudPlots|"
+msgid "Factors"
+msgstr "因子"
+
+msgctxt "RainCloudPlots|"
+msgid "The independent variables included in the analysis."
+msgstr "分析中包含的自变量。"
+
+msgctxt "RainCloudPlots|"
+msgid "Horizontal Axis"
+msgstr "水平轴"
+
+msgctxt "RainCloudPlots|"
+msgid ""
+"Select the independent variable that should be displayed on the horizontal"
+"axis of the plot."
+msgstr "选择应显示在图水平轴上的自变量。"
+
+msgctxt "RainCloudPlots|"
+msgid "Separate Plots"
+msgstr "分图"
+
+msgctxt "RainCloudPlots|"
+msgid ""
+"By placing an independent variable in this box, different plots corresponding"
+"to the different levels of the independent variable will be displayed."
+msgstr "在此框中放入自变量，将显示与该自变量的不同水平对应的不同图表。"
+
+msgctxt "RainCloudPlots|"
+msgid "Horizontal display"
+msgstr "水平显示"
+
+msgctxt "RainCloudPlots|"
+msgid ""
+"Changes the orientation of the raincloud difference plot so that the x-axis"
+"represents the dependent variable."
+msgstr "更改雨云差异图的方向，使x轴表示因变量。"
+
+msgctxt "RainCloudPlots|"
+msgid "Label y-axis"
+msgstr "y轴标签"
+
+msgctxt "RobustOptions|"
+msgid ""
+"Specify the robust estimation method and its parameters. All methods are based"
+"on the WRS2 package."
+msgstr "指定稳健估计方法及其参数。所有方法都基于WRS2包。"
+
+msgctxt "RobustOptions|"
+msgid ""
+"Trimmed Means + Bootstrap: A percentile t-bootstrap version of the trimmed"
+"means test."
+msgstr "截尾均值 + 自助法：截尾均值检验的百分位t自助法版本。"
+
+msgctxt "RobustOptions|"
+msgid ""
+"Medians: A heteroscedastic ANOVA based on medians using the Harrell-Davis"
+"estimator."
+msgstr "中位数：使用Harrell-Davis估计器基于中位数的异方差方差分析。"
+
+msgctxt "RobustOptions|"
+msgid "Method"
+msgstr "方法"
+
+msgctxt "RobustOptions|"
+msgid "Select the robust estimation method to use for the analysis."
+msgstr "选择用于分析的稳健估计方法。"
+
+msgctxt "RobustOptions|"
+msgid "Trimmed Means"
+msgstr "截尾均值"
+
+msgctxt "RobustOptions|"
+msgid "Trimmed Means + Bootstrap"
+msgstr "截尾均值 + 自助法"
+
+msgctxt "RobustOptions|"
+msgid "Medians"
+msgstr "中位数"
+
+msgctxt "RobustOptions|"
+msgid "Trimming proportion"
+msgstr "截尾比例"
+
+msgctxt "RobustOptions|"
+msgid "Bootstrap samples"
+msgstr "自助法样本"
+
+msgctxt "RobustOptions|"
+msgid "The number of bootstrap resamples to use. Default is 599."
+msgstr "要使用的自助法重采样数。默认值为599。"
+
+msgctxt "DescriptivePlots|"
+msgid "Descriptives Plots"
+msgstr "描述统计图"
+
+msgctxt "DescriptivePlots|"
+msgid ""
+"To create a descriptive plot, select the independent variable to be placed on"
+"the horizontal axis. If there are more than one independent variable, they can"
+"be visualized in a single plot by placing the second variable in 'Separate"
+"Lines,' or visualized in separate plots by placing the variable in 'Separate"
+"Plots'."
+msgstr ""
+"要创建描述统计图，请选择要放在水平轴上的自变量。如果不止一个自变量，可将第二个变量放入"
+"'分线'以在单个图表中显示，或将变量放入'分图'以在单独的图表中显示。"
+
+msgctxt "DescriptivePlots|"
+msgid "Factors"
+msgstr "因子"
+
+msgctxt "DescriptivePlots|"
+msgid "The independent variables included in the analysis."
+msgstr "分析中包含的自变量。"
+
+msgctxt "DescriptivePlots|"
+msgid "Horizontal Axis"
+msgstr "水平轴"
+
+msgctxt "DescriptivePlots|"
+msgid ""
+"Select the independent variable that should be displayed on the horizontal"
+"axis of the plot."
+msgstr "选择应显示在图水平轴上的自变量。"
+
+msgctxt "DescriptivePlots|"
+msgid "Separate Lines"
+msgstr "分线"
+
+msgctxt "DescriptivePlots|"
+msgid ""
+"By placing an independent variable in this box, different lines corresponding"
+"to the different levels of the independent variable will be displayed."
+msgstr "在此框中放入自变量，将显示与该自变量的不同水平对应的不同线条。"
+
+msgctxt "DescriptivePlots|"
+msgid "Separate Plots"
+msgstr "分图"
+
+msgctxt "DescriptivePlots|"
+msgid ""
+"By placing an independent variable in this box, different plots corresponding"
+"to the different levels of the independent variable will be displayed."
+msgstr "在此框中放入自变量，将显示与该自变量的不同水平对应的不同图表。"
+
+msgctxt "DescriptivePlots|"
+msgid "Display"
+msgstr "显示"
+
+msgctxt "DescriptivePlots|"
+msgid "Error bars"
+msgstr "误差线"
+
+msgctxt "DescriptivePlots|"
+msgid ""
+"Display error bars in the plot. The error bars can represent either confidence"
+"intervals or standard errors."
+msgstr "在图中显示误差线。误差线可以表示置信区间或标准误。"
+
+msgctxt "DescriptivePlots|"
+msgid "Confidence interval"
+msgstr "置信区间"
+
+msgctxt "DescriptivePlots|"
+msgid "Standard error"
+msgstr "标准误"
+
+msgctxt "DescriptivePlots|"
+msgid "Normalize error bars"
+msgstr "标准化误差线"
+
+msgctxt "PostHoc|"
+msgid "Post Hoc Tests"
+msgstr "事后检验"
+
+msgctxt "PostHoc|"
+msgid "Correction"
+msgstr "校正"
+
+msgctxt "PostHoc|"
+msgid ""
+"To correct for multiple comparisons, various methods are available for"
+"adjusting the p-value. Note: corrections are applied when supported by the"
+"chosen robust post hoc method."
+msgstr ""
+"为校正多重比较，有多种调整p值的方法可用。注意：校正仅在所选稳健事后检验方法支持时应用。"
+
+msgctxt "PostHoc|"
+msgid "Hochberg"
+msgstr "Hochberg"
+
+msgctxt "PostHoc|"
+msgid "Bonferroni"
+msgstr "Bonferroni"
+
+msgctxt "PostHoc|"
+msgid ""
+"This correction is considered conservative. The risk of Type I error is"
+"reduced, however the statistical power decreases as well."
+msgstr ""
+"该校正被视为保守。虽然降低了第一类错误的风险，但统计功效也会随之降低。"
+
+msgctxt "PostHoc|"
+msgid "Holm"
+msgstr "Holm"
+
+msgctxt "PostHoc|"
+msgid ""
+"Also called sequential Bonferroni, and considered less conservative than the"
+"Bonferroni method."
+msgstr "也称为序贯Bonferroni，被认为比Bonferroni方法保守程度更低。"
+
+msgctxt "PostHocDisplay|"
+msgid "Display"
+msgstr "显示"
+
+msgctxt "PostHocDisplay|"
+msgid "Confidence intervals"
+msgstr "置信区间"
+
+msgctxt "PostHocDisplay|"
+msgid ""
+"When this option is selected, the confidence interval for the trimmed mean"
+"difference is displayed."
+msgstr "选择此选项时，将显示截尾均值差异的置信区间。"
+
+msgctxt "PostHocDisplay|"
+msgid "Flag significant comparisons"
+msgstr "标记显著比较"
+
+msgctxt "PostHocDisplay|"
+msgid "Add asterisks to the table to indicate 3 levels of significance."
+msgstr "在表格中添加星号以表示3个显著性水平。"

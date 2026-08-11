@@ -1,0 +1,375 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jaspRobust 0.1\n"
+"Report-Msgid-Bugs-To: github.com/jasp-stats/jasp-issues/issues\n"
+"POT-Creation-Date: 2026-01-01 00:00+0000\n"
+"PO-Revision-Date: 2026-01-01 00:00+0000\n"
+"Last-Translator: JASP translators\n"
+"Language-Team: Chinese (Simplified)\n"
+"Language: zh_Hans\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#, qt-format
+msgid ""
+"Robust ANCOVA requires a factor with exactly 2 levels, but '%1$s' has %2$d"
+"levels."
+msgstr "稳健协方差分析需要一个恰好具有2个水平的因子，但'%1$s'有%2$d个水平。"
+
+msgid "Robust ANCOVA failed: %s"
+msgstr "稳健协方差分析失败：%s"
+
+msgid "Robust ANOVA with trimmed means supports at most 3 factors."
+msgstr "使用截尾均值的稳健方差分析最多支持3个因子。"
+
+msgid "Bootstrap robust ANOVA is currently only supported for one-way designs."
+msgstr "自助法稳健方差分析目前仅支持单因素设计。"
+
+msgid "Robust ANOVA with medians supports at most 2 factors."
+msgstr "使用中位数的稳健方差分析最多支持2个因子。"
+
+msgid "Robust ANOVA failed: %s"
+msgstr "稳健方差分析失败：%s"
+
+msgid "Robust ANCOVA"
+msgstr "稳健协方差分析"
+
+msgid "Covariate Value"
+msgstr "协变量值"
+
+msgid "n (Group 1)"
+msgstr "n（组1）"
+
+msgid "n (Group 2)"
+msgstr "n（组2）"
+
+msgid "\\u0394 Trimmed Mean"
+msgstr "Δ截尾均值"
+
+msgid "SE"
+msgstr "SE"
+
+msgid "Lower"
+msgstr "下限"
+
+msgid "95%% CI"
+msgstr "95%% CI"
+
+msgid "Upper"
+msgstr "上限"
+
+msgid "Test Statistic"
+msgstr "检验统计量"
+
+msgid "p"
+msgstr "p"
+
+#, qt-format
+msgid "Group 1: %1$s; Group 2: %2$s"
+msgstr "组1：%1$s；组2：%2$s"
+
+msgid "Bootstrap ANCOVA with trimmed means (%.0f%% trimming, %d bootstrap samples)."
+msgstr "使用截尾均值的自助法协方差分析（%.0f%%截尾，%d个自助样本）。"
+
+msgid "Trimmed means compared using %.0f%% trimming."
+msgstr "使用%.0f%%截尾比较截尾均值。"
+
+msgid ""
+"Wilcox, R. (2012). Introduction to Robust Estimation and Hypothesis Testing"
+"(3rd ed.). Elsevier."
+msgstr "Wilcox, R. (2012). Introduction to Robust Estimation and Hypothesis Testing（第3版）. Elsevier."
+
+msgid "Robust ANOVA"
+msgstr "稳健方差分析"
+
+msgid "df1"
+msgstr "df1"
+
+msgid "df2"
+msgstr "df2"
+
+msgid "\\u03BE"
+msgstr "ξ"
+
+msgid "Var. Explained"
+msgstr "解释方差"
+
+msgid "Effect"
+msgstr "效应"
+
+msgid "Critical Value"
+msgstr "临界值"
+
+msgid "Heteroscedastic one-way ANOVA for trimmed means (%.0f%% trimming)."
+msgstr "截尾均值的异方差单因素方差分析（%.0f%%截尾）。"
+
+msgid "\\u03BE denotes the explanatory measure of effect size."
+msgstr "ξ表示效应量的解释性度量。"
+
+msgid ""
+"Percentile t-bootstrap one-way ANOVA for trimmed means (%.0f%% trimming, %d"
+"bootstrap samples)."
+msgstr ""
+"截尾均值的百分位t自助法单因素方差分析（%.0f%%截尾，%d个自助样本）。"
+
+msgid "Heteroscedastic one-way ANOVA for medians."
+msgstr "中位数的异方差单因素方差分析。"
+
+msgid "Two-way ANOVA for trimmed means (%.0f%% trimming)."
+msgstr "截尾均值的双因素方差分析（%.0f%%截尾）。"
+
+msgid "Two-way ANOVA for medians."
+msgstr "中位数的双因素方差分析。"
+
+msgid "Three-way ANOVA for trimmed means (%.0f%% trimming)."
+msgstr "截尾均值的三因素方差分析（%.0f%%截尾）。"
+
+msgid "Post Hoc Tests"
+msgstr "事后检验"
+
+msgid "Post Hoc Comparisons - %s"
+msgstr "事后比较 - %s"
+
+msgid "Difference"
+msgstr "差异"
+
+msgid "%.0f%% CI"
+msgstr "%.0f%% CI"
+
+msgid "Could not compute post hoc comparisons for %s."
+msgstr "无法计算%s的事后比较。"
+
+msgid "Post hoc comparisons are not available for the medians method."
+msgstr "中位数方法不提供事后比较。"
+
+msgid "p<sub>Hochberg</sub>"
+msgstr "p<sub>Hochberg</sub>"
+
+msgid "p<sub>Bonf</sub>"
+msgstr "p<sub>Bonf</sub>"
+
+msgid "p<sub>Holm</sub>"
+msgstr "p<sub>Holm</sub>"
+
+msgid "Descriptives"
+msgstr "描述统计"
+
+msgid "Variable"
+msgstr "变量"
+
+msgid "Robust Effect Sizes"
+msgstr "稳健效应量"
+
+msgid "ξ"
+msgstr "ξ"
+
+msgid ""
+"ξ is the Algina-Keselman-Penfield robust standardised mean difference"
+"(WRS2::akp.effect)."
+msgstr "ξ为Algina-Keselman-Penfield稳健标准化均值差异（WRS2::akp.effect）。"
+
+msgid "Robust effect sizes are only computed for one-way designs."
+msgstr "仅对单因素设计计算稳健效应量。"
+
+msgid "Need at least two factor levels to compute pairwise effect sizes."
+msgstr "计算成对效应量至少需要两个因子水平。"
+
+msgid "Descriptives Plots"
+msgstr "描述统计图"
+
+msgid "Raincloud Plots"
+msgstr "雨云图"
+
+msgid "Error while loading data: %s"
+msgstr "加载数据时出错：%s"
+
+msgid ""
+"Robust repeated measures ANOVA currently supports only one within-subjects"
+"factor."
+msgstr "稳健重复测量方差分析目前仅支持一个被试内因子。"
+
+msgid ""
+"Robust repeated measures ANOVA currently supports at most one between-subjects"
+"factor."
+msgstr "稳健重复测量方差分析目前最多支持一个被试间因子。"
+
+msgid ""
+"Median-based robust analysis is not currently supported for repeated measures"
+"designs. Please select Trimmed Means or Trimmed Means + Bootstrap."
+msgstr ""
+"基于中位数的稳健分析目前不支持重复测量设计。请选择“截尾均值”或“截尾均值 + 自助法”。"
+
+msgid "Bootstrap mixed RM ANOVA failed:\\n%s"
+msgstr "自助法混合重复测量方差分析失败：\n%s"
+
+msgid "Mixed RM ANOVA failed: %s"
+msgstr "混合重复测量方差分析失败：%s"
+
+msgid "Robust RM ANOVA failed: %s"
+msgstr "稳健重复测量方差分析失败：%s"
+
+msgid "Robust Repeated Measures ANOVA"
+msgstr "稳健重复测量方差分析"
+
+msgid "Bootstrap with trimmed means (%.0f%% trimming, %d bootstrap samples)."
+msgstr "使用截尾均值的自助法（%.0f%%截尾，%d个自助样本）。"
+
+msgid ""
+"Reject H₀ if the test statistic exceeds the critical value %.3f (α = .05); no"
+"p-value is reported by this bootstrap procedure."
+msgstr ""
+"若检验统计量超过临界值%.3f（α = .05）则拒绝H₀；该自助法程序不报告p值。"
+
+msgid "Trimmed means (%.0f%% trimming)."
+msgstr "截尾均值（%.0f%%截尾）。"
+
+msgid "Robust post hoc tests are only available for within-subjects factors."
+msgstr "稳健事后检验仅适用于被试内因子。"
+
+msgid "Post hoc tests failed: %s"
+msgstr "事后检验失败：%s"
+
+msgid "Percentage Bend"
+msgstr "百分比弯曲"
+
+msgid "Winsorized"
+msgstr "温索化"
+
+msgid "Robust"
+msgstr "稳健"
+
+msgid "%s Correlation"
+msgstr "%s相关"
+
+msgid "r"
+msgstr "r"
+
+msgid "t"
+msgstr "t"
+
+msgid "n"
+msgstr "n"
+
+msgid "two-sided"
+msgstr "双侧"
+
+msgid "greater"
+msgstr "大于"
+
+msgid "less"
+msgstr "小于"
+
+msgid "Alternative hypothesis: %s."
+msgstr "备择假设：%s。"
+
+#, qt-format
+msgid "Computation failed for %1$s - %2$s: %3$s"
+msgstr "%1$s - %2$s的计算失败：%3$s"
+
+msgid "%s ***"
+msgstr "%s ***"
+
+msgid "%s **"
+msgstr "%s **"
+
+msgid "%s *"
+msgstr "%s *"
+
+msgid "* p < .05, ** p < .01, *** p < .001"
+msgstr "* p < .05，** p < .01，*** p < .001"
+
+msgid "Scatter Plots"
+msgstr "散点图"
+
+#, qt-format
+msgid "%1$s - %2$s"
+msgstr "%1$s - %2$s"
+
+msgid "Plotting failed: %s"
+msgstr "绘图失败：%s"
+
+msgid "Trimmed Mean"
+msgstr "截尾均值"
+
+msgid "Median"
+msgstr "中位数"
+
+msgid "Winsorized SD"
+msgstr "温索化标准差"
+
+msgid "MAD"
+msgstr "MAD"
+
+msgid "Trimmed Mean shown without trimming because the medians method is selected."
+msgstr "由于选择了中位数方法，显示未截尾的截尾均值。"
+
+msgid "Trimmed Mean and Winsorized SD use %.0f%% trimming."
+msgstr "截尾均值和温索化标准差使用%.0f%%截尾。"
+
+msgid "Robust regression failed: %s"
+msgstr "稳健回归失败：%s"
+
+msgid "Robust Regression Coefficients"
+msgstr "稳健回归系数"
+
+msgid "Term"
+msgstr "项"
+
+msgid "Estimate"
+msgstr "估计值"
+
+msgid "Std. Error"
+msgstr "标准误"
+
+msgid "%s%% CI"
+msgstr "%s%% CI"
+
+msgid "Huber M-estimation"
+msgstr "Huber M估计"
+
+msgid "Bisquare M-estimation"
+msgstr "双平方M估计"
+
+msgid "MM-estimation"
+msgstr "MM估计"
+
+msgid "M-estimation"
+msgstr "M估计"
+
+msgid "Method: %s. P-values computed via Wald test."
+msgstr "方法：%s。p值通过Wald检验计算。"
+
+msgid "Model Summary"
+msgstr "模型摘要"
+
+msgid "Residual Scale"
+msgstr "残差尺度"
+
+msgid "Downweighted Obs."
+msgstr "降权观测"
+
+msgid "Converged"
+msgstr "已收敛"
+
+msgid "Residuals vs. Fitted"
+msgstr "残差对拟合值"
+
+msgid "Fitted values"
+msgstr "拟合值"
+
+msgid "Residuals"
+msgstr "残差"
+
+msgid "Q-Q Plot of Residuals"
+msgstr "残差的Q-Q图"
+
+msgid "Robust Weights"
+msgstr "稳健权重"
+
+msgid "Observation"
+msgstr "观测"
+
+msgid "Weight"
+msgstr "权重"
