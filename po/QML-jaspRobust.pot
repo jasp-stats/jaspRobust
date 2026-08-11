@@ -1,0 +1,719 @@
+msgid ""
+msgstr ""
+"X-Qt-Contexts: true\n"
+
+msgctxt "Description|"
+msgid "Robust Statistics"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Robust versions of classical statistical analyses"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Robust Classical Analyses"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Robust ANOVA"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Robust Repeated Measures ANOVA"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Robust ANCOVA"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Robust Linear Regression"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Robust Correlation"
+msgstr ""
+
+msgctxt "AncovaRobust|"
+msgid ""
+"Robust ANCOVA compares trimmed means of exactly two groups while adjusting for"
+"a covariate, using a nonparametric running interval smoother. No parametric"
+"assumptions about homogeneity of regression slopes or equal variances are"
+"required. Without a covariate, a robust one-way ANOVA is performed instead."
+msgstr ""
+
+msgctxt "AncovaRobust|"
+msgid "Assumptions"
+msgstr ""
+
+msgctxt "AncovaRobust|"
+msgid "The independent variable is categorical with exactly two levels."
+msgstr ""
+
+msgctxt "AncovaRobust|"
+msgid "The dependent variable and covariate are continuous."
+msgstr ""
+
+msgctxt "AncovaRobust|"
+msgid "The groups are independent."
+msgstr ""
+
+msgctxt "AncovaRobust|"
+msgid "Dependent Variable"
+msgstr ""
+
+msgctxt "AncovaRobust|"
+msgid "The continuous outcome variable."
+msgstr ""
+
+msgctxt "AncovaRobust|"
+msgid "Fixed Factor"
+msgstr ""
+
+msgctxt "AncovaRobust|"
+msgid "A categorical grouping variable with exactly two levels."
+msgstr ""
+
+msgctxt "AncovaRobust|"
+msgid "Covariate"
+msgstr ""
+
+msgctxt "AncovaRobust|"
+msgid "An optional continuous covariate to adjust for."
+msgstr ""
+
+msgctxt "AncovaRobust|"
+msgid "Additional Statistics"
+msgstr ""
+
+msgctxt "AncovaRobust|"
+msgid "Descriptives"
+msgstr ""
+
+msgctxt "AncovaRobust|"
+msgid ""
+"Per-group sample size, trimmed mean, median, Winsorized standard deviation,"
+"and median absolute deviation for the dependent variable and each covariate."
+msgstr ""
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid ""
+"Robust Repeated Measures ANOVA analyzes differences between dependent group"
+"means using robust methods from the WRS2 package. No assumptions of normality,"
+"homogeneity, or sphericity are required."
+msgstr ""
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid "Assumptions"
+msgstr ""
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid "The dependent variable is continuous."
+msgstr ""
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid "Repeated Measures Factor"
+msgstr ""
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid "RM Factor"
+msgstr ""
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid "Repeated Measures Cells"
+msgstr ""
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid "Between Subject Factor"
+msgstr ""
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid "Optional single between-subjects grouping variable for mixed designs."
+msgstr ""
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid "Additional Statistics"
+msgstr ""
+
+msgctxt "AnovaRepeatedMeasuresRobust|"
+msgid "Descriptives"
+msgstr ""
+
+msgctxt "AnovaRobust|"
+msgid ""
+"Robust ANOVA analyzes differences between group means using robust methods"
+"from the WRS2 package. These methods do not assume normality or homogeneity of"
+"variances."
+msgstr ""
+
+msgctxt "AnovaRobust|"
+msgid "Assumptions"
+msgstr ""
+
+msgctxt "AnovaRobust|"
+msgid ""
+"The independent variables are categorical, the dependent variable is"
+"continuous."
+msgstr ""
+
+msgctxt "AnovaRobust|"
+msgid "The groups are independent."
+msgstr ""
+
+msgctxt "AnovaRobust|"
+msgid "Dependent Variable"
+msgstr ""
+
+msgctxt "AnovaRobust|"
+msgid "The continuous outcome variable."
+msgstr ""
+
+msgctxt "AnovaRobust|"
+msgid "Fixed Factors"
+msgstr ""
+
+msgctxt "AnovaRobust|"
+msgid "Additional Statistics"
+msgstr ""
+
+msgctxt "AnovaRobust|"
+msgid "Descriptives"
+msgstr ""
+
+msgctxt "AnovaRobust|"
+msgid "Robust effect sizes"
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Assumptions"
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Variables"
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid ""
+"Two or more continuous variables. All pairwise robust correlations are"
+"reported."
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Options"
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Method"
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid ""
+"Percentage bend correlation downweights values in the tails. Winsorized"
+"correlation replaces extreme values with less extreme ones before computing"
+"the correlation."
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Percentage bend"
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Winsorized"
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Trimming proportion"
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid ""
+"Bending constant β for percentage bend correlation, or Winsorization"
+"proportion for the Winsorized correlation. Also used for the descriptives"
+"table. Default is 0.2."
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Sample size"
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Display the number of complete pairwise observations used in each correlation."
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Flag significant correlations"
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Descriptives"
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid ""
+"Per-variable sample size, trimmed mean, median, Winsorized standard deviation,"
+"and median absolute deviation."
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Alternative hypothesis"
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid ""
+"Specify the directional hypothesis used to compute the p-value of each"
+"correlation."
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Test whether the correlation differs from zero in either direction."
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Positively correlated"
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Test whether the correlation is greater than zero."
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Negatively correlated"
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Test whether the correlation is less than zero."
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Plots"
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid "Scatter plots"
+msgstr ""
+
+msgctxt "CorrelationRobust|"
+msgid ""
+"Displays scatter plots with marginal density plots and a linear regression"
+"line for each pair of variables."
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "Assumptions"
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "Dependent Variable"
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "The continuous outcome variable to be regressed on the predictors."
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "Covariates"
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "Continuous predictors entered as numeric covariates."
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "Factors"
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid ""
+"Categorical predictors. Each factor is dummy coded with the first level as the"
+"reference."
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "Estimation method"
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "MM-estimation"
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "Statistics"
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "Coefficients"
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "Estimates"
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid ""
+"Display the estimated regression coefficients with standard errors, Wald"
+"t-statistics, and p-values."
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "Confidence intervals"
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid ""
+"Display Wald-type confidence intervals for the regression coefficients at the"
+"chosen confidence level."
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "Descriptives"
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid ""
+"Per-variable sample size, trimmed mean, median, Winsorized standard deviation,"
+"and median absolute deviation for the dependent variable and each covariate."
+"The trimming proportion is used only for these descriptives; the robust"
+"regression fit itself uses the chosen estimation method."
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "Trimming proportion"
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid ""
+"Trimming proportion used for the trimmed mean and Winsorized SD in the"
+"descriptives table. Default is 0.2."
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "Plots"
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "Residual Plots"
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "Residuals vs. fitted"
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid ""
+"Plot residuals against fitted values with a loess smoother to inspect non-"
+"linearity or heteroscedasticity that survives the robust fit."
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "Q-Q plot of residuals"
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid ""
+"Normal quantile-quantile plot of the standardised residuals to assess the"
+"residual distribution."
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "Other Plots"
+msgstr ""
+
+msgctxt "RegressionLinearRobust|"
+msgid "Robust weights"
+msgstr ""
+
+msgctxt "OutlierComponent|"
+msgid "Residuals"
+msgstr ""
+
+msgctxt "OutlierComponent|"
+msgid "Statistics"
+msgstr ""
+
+msgctxt "OutlierComponent|"
+msgid "Displays descriptive statistics of the residuals and predicted values."
+msgstr ""
+
+msgctxt "OutlierComponent|"
+msgid "Casewise diagnostics"
+msgstr ""
+
+msgctxt "OutlierComponent|"
+msgid "Std. residual >"
+msgstr ""
+
+msgctxt "OutlierComponent|"
+msgid "Cook's dist. >"
+msgstr ""
+
+msgctxt "OutlierComponent|"
+msgid "All"
+msgstr ""
+
+msgctxt "OutlierComponent|"
+msgid "DFBETAS"
+msgstr ""
+
+msgctxt "OutlierComponent|"
+msgid ""
+"The difference between a parameter estimated using all cases and estimated"
+"when one case is excluded. Indicated in the table when the absolute value of"
+"DFBETAS is greater than 1."
+msgstr ""
+
+msgctxt "OutlierComponent|"
+msgid "DFFITS"
+msgstr ""
+
+msgctxt "OutlierComponent|"
+msgid "Cov ratio"
+msgstr ""
+
+msgctxt "OutlierComponent|"
+msgid "Leverage"
+msgstr ""
+
+msgctxt "OutlierComponent|"
+msgid ""
+"The influence of the observed value of the outcome variable over the predicted"
+"values. Indicated in the table when the leverage is greater than 3 * k/n."
+msgstr ""
+
+msgctxt "OutlierComponent|"
+msgid "Mahalanobis"
+msgstr ""
+
+msgctxt "RainCloudPlots|"
+msgid "Raincloud Plots"
+msgstr ""
+
+msgctxt "RainCloudPlots|"
+msgid "Factors"
+msgstr ""
+
+msgctxt "RainCloudPlots|"
+msgid "The independent variables included in the analysis."
+msgstr ""
+
+msgctxt "RainCloudPlots|"
+msgid "Horizontal Axis"
+msgstr ""
+
+msgctxt "RainCloudPlots|"
+msgid ""
+"Select the independent variable that should be displayed on the horizontal"
+"axis of the plot."
+msgstr ""
+
+msgctxt "RainCloudPlots|"
+msgid "Separate Plots"
+msgstr ""
+
+msgctxt "RainCloudPlots|"
+msgid ""
+"By placing an independent variable in this box, different plots corresponding"
+"to the different levels of the independent variable will be displayed."
+msgstr ""
+
+msgctxt "RainCloudPlots|"
+msgid "Horizontal display"
+msgstr ""
+
+msgctxt "RainCloudPlots|"
+msgid ""
+"Changes the orientation of the raincloud difference plot so that the x-axis"
+"represents the dependent variable."
+msgstr ""
+
+msgctxt "RainCloudPlots|"
+msgid "Label y-axis"
+msgstr ""
+
+msgctxt "RobustOptions|"
+msgid ""
+"Specify the robust estimation method and its parameters. All methods are based"
+"on the WRS2 package."
+msgstr ""
+
+msgctxt "RobustOptions|"
+msgid ""
+"Trimmed Means + Bootstrap: A percentile t-bootstrap version of the trimmed"
+"means test."
+msgstr ""
+
+msgctxt "RobustOptions|"
+msgid ""
+"Medians: A heteroscedastic ANOVA based on medians using the Harrell-Davis"
+"estimator."
+msgstr ""
+
+msgctxt "RobustOptions|"
+msgid "Method"
+msgstr ""
+
+msgctxt "RobustOptions|"
+msgid "Select the robust estimation method to use for the analysis."
+msgstr ""
+
+msgctxt "RobustOptions|"
+msgid "Trimmed Means"
+msgstr ""
+
+msgctxt "RobustOptions|"
+msgid "Trimmed Means + Bootstrap"
+msgstr ""
+
+msgctxt "RobustOptions|"
+msgid "Medians"
+msgstr ""
+
+msgctxt "RobustOptions|"
+msgid "Trimming proportion"
+msgstr ""
+
+msgctxt "RobustOptions|"
+msgid "Bootstrap samples"
+msgstr ""
+
+msgctxt "RobustOptions|"
+msgid "The number of bootstrap resamples to use. Default is 599."
+msgstr ""
+
+msgctxt "DescriptivePlots|"
+msgid "Descriptives Plots"
+msgstr ""
+
+msgctxt "DescriptivePlots|"
+msgid ""
+"To create a descriptive plot, select the independent variable to be placed on"
+"the horizontal axis. If there are more than one independent variable, they can"
+"be visualized in a single plot by placing the second variable in 'Separate"
+"Lines,' or visualized in separate plots by placing the variable in 'Separate"
+"Plots'."
+msgstr ""
+
+msgctxt "DescriptivePlots|"
+msgid "Factors"
+msgstr ""
+
+msgctxt "DescriptivePlots|"
+msgid "The independent variables included in the analysis."
+msgstr ""
+
+msgctxt "DescriptivePlots|"
+msgid "Horizontal Axis"
+msgstr ""
+
+msgctxt "DescriptivePlots|"
+msgid ""
+"Select the independent variable that should be displayed on the horizontal"
+"axis of the plot."
+msgstr ""
+
+msgctxt "DescriptivePlots|"
+msgid "Separate Lines"
+msgstr ""
+
+msgctxt "DescriptivePlots|"
+msgid ""
+"By placing an independent variable in this box, different lines corresponding"
+"to the different levels of the independent variable will be displayed."
+msgstr ""
+
+msgctxt "DescriptivePlots|"
+msgid "Separate Plots"
+msgstr ""
+
+msgctxt "DescriptivePlots|"
+msgid ""
+"By placing an independent variable in this box, different plots corresponding"
+"to the different levels of the independent variable will be displayed."
+msgstr ""
+
+msgctxt "DescriptivePlots|"
+msgid "Display"
+msgstr ""
+
+msgctxt "DescriptivePlots|"
+msgid "Error bars"
+msgstr ""
+
+msgctxt "DescriptivePlots|"
+msgid ""
+"Display error bars in the plot. The error bars can represent either confidence"
+"intervals or standard errors."
+msgstr ""
+
+msgctxt "DescriptivePlots|"
+msgid "Confidence interval"
+msgstr ""
+
+msgctxt "DescriptivePlots|"
+msgid "Standard error"
+msgstr ""
+
+msgctxt "DescriptivePlots|"
+msgid "Normalize error bars"
+msgstr ""
+
+msgctxt "PostHoc|"
+msgid "Post Hoc Tests"
+msgstr ""
+
+msgctxt "PostHoc|"
+msgid "Correction"
+msgstr ""
+
+msgctxt "PostHoc|"
+msgid ""
+"To correct for multiple comparisons, various methods are available for"
+"adjusting the p-value. Note: corrections are applied when supported by the"
+"chosen robust post hoc method."
+msgstr ""
+
+msgctxt "PostHoc|"
+msgid "Hochberg"
+msgstr ""
+
+msgctxt "PostHoc|"
+msgid "Bonferroni"
+msgstr ""
+
+msgctxt "PostHoc|"
+msgid ""
+"This correction is considered conservative. The risk of Type I error is"
+"reduced, however the statistical power decreases as well."
+msgstr ""
+
+msgctxt "PostHoc|"
+msgid "Holm"
+msgstr ""
+
+msgctxt "PostHoc|"
+msgid ""
+"Also called sequential Bonferroni, and considered less conservative than the"
+"Bonferroni method."
+msgstr ""
+
+msgctxt "PostHocDisplay|"
+msgid "Display"
+msgstr ""
+
+msgctxt "PostHocDisplay|"
+msgid "Confidence intervals"
+msgstr ""
+
+msgctxt "PostHocDisplay|"
+msgid ""
+"When this option is selected, the confidence interval for the trimmed mean"
+"difference is displayed."
+msgstr ""
+
+msgctxt "PostHocDisplay|"
+msgid "Flag significant comparisons"
+msgstr ""
+
+msgctxt "PostHocDisplay|"
+msgid "Add asterisks to the table to indicate 3 levels of significance."
+msgstr ""
+
