@@ -1,0 +1,401 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jaspRobust 0.1\n"
+"Report-Msgid-Bugs-To: github.com/jasp-stats/jasp-issues/issues\n"
+"POT-Creation-Date: 2026-01-01 00:00+0000\n"
+"PO-Revision-Date: 2026-01-01 00:00+0000\n"
+"Last-Translator: JASP translators\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, qt-format
+msgid ""
+"Robust ANCOVA requires a factor with exactly 2 levels, but '%1$s' has %2$d"
+"levels."
+msgstr ""
+"Für eine robuste ANCOVA ist ein Faktor mit genau 2 Stufen erforderlich, aber "
+"'%1$s' hat %2$d Stufen."
+
+msgid "Robust ANCOVA failed: %s"
+msgstr "Robuste ANCOVA fehlgeschlagen: %s"
+
+msgid "Robust ANOVA with trimmed means supports at most 3 factors."
+msgstr "Eine robuste ANOVA mit getrimmten Mittelwerten unterstützt höchstens 3 Faktoren."
+
+msgid "Bootstrap robust ANOVA is currently only supported for one-way designs."
+msgstr ""
+"Die Bootstrap-robuste ANOVA wird derzeit nur für einfaktorielle Designs "
+"unterstützt."
+
+msgid "Robust ANOVA with medians supports at most 2 factors."
+msgstr "Eine robuste ANOVA mit Medianen unterstützt höchstens 2 Faktoren."
+
+msgid "Robust ANOVA failed: %s"
+msgstr "Robuste ANOVA fehlgeschlagen: %s"
+
+msgid "Robust ANCOVA"
+msgstr "Robuste ANCOVA"
+
+msgid "Covariate Value"
+msgstr "Kovariatenwert"
+
+msgid "n (Group 1)"
+msgstr "n (Gruppe 1)"
+
+msgid "n (Group 2)"
+msgstr "n (Gruppe 2)"
+
+msgid "\\u0394 Trimmed Mean"
+msgstr "\\u0394 Getrimmter Mittelwert"
+
+msgid "SE"
+msgstr "SE"
+
+msgid "Lower"
+msgstr "Untere"
+
+msgid "95%% CI"
+msgstr "95%% KI"
+
+msgid "Upper"
+msgstr "Obere"
+
+msgid "Test Statistic"
+msgstr "Teststatistik"
+
+msgid "p"
+msgstr "p"
+
+#, qt-format
+msgid "Group 1: %1$s; Group 2: %2$s"
+msgstr "Gruppe 1: %1$s; Gruppe 2: %2$s"
+
+msgid "Bootstrap ANCOVA with trimmed means (%.0f%% trimming, %d bootstrap samples)."
+msgstr ""
+"Bootstrap-ANCOVA mit getrimmten Mittelwerten (%.0f%%-Trimmen, %d Bootstrap-"
+"Stichproben)."
+
+msgid "Trimmed means compared using %.0f%% trimming."
+msgstr "Getrimmte Mittelwerte verglichen mit %.0f%%-Trimmen."
+
+msgid ""
+"Wilcox, R. (2012). Introduction to Robust Estimation and Hypothesis Testing"
+"(3rd ed.). Elsevier."
+msgstr ""
+"Wilcox, R. (2012). Introduction to Robust Estimation and Hypothesis Testing "
+"(3rd ed.). Elsevier."
+
+msgid "Robust ANOVA"
+msgstr "Robuste ANOVA"
+
+msgid "df1"
+msgstr "df1"
+
+msgid "df2"
+msgstr "df2"
+
+msgid "\\u03BE"
+msgstr "\\u03BE"
+
+msgid "Var. Explained"
+msgstr "Varianz erklärt"
+
+msgid "Effect"
+msgstr "Effekt"
+
+msgid "Critical Value"
+msgstr "Kritischer Wert"
+
+msgid "Heteroscedastic one-way ANOVA for trimmed means (%.0f%% trimming)."
+msgstr ""
+"Heteroskedastische einfaktorielle ANOVA für getrimmte Mittelwerte "
+"(%.0f%%-Trimmen)."
+
+msgid "\\u03BE denotes the explanatory measure of effect size."
+msgstr "\\u03BE bezeichnet das erklärende Maß der Effektgröße."
+
+msgid ""
+"Percentile t-bootstrap one-way ANOVA for trimmed means (%.0f%% trimming, %d"
+"bootstrap samples)."
+msgstr ""
+"Perzentil-t-Bootstrap-einfaktorielle ANOVA für getrimmte Mittelwerte "
+"(%.0f%%-Trimmen, %d Bootstrap-Stichproben)."
+
+msgid "Heteroscedastic one-way ANOVA for medians."
+msgstr "Heteroskedastische einfaktorielle ANOVA für Mediane."
+
+msgid "Two-way ANOVA for trimmed means (%.0f%% trimming)."
+msgstr "Zweifaktorielle ANOVA für getrimmte Mittelwerte (%.0f%%-Trimmen)."
+
+msgid "Two-way ANOVA for medians."
+msgstr "Zweifaktorielle ANOVA für Mediane."
+
+msgid "Three-way ANOVA for trimmed means (%.0f%% trimming)."
+msgstr "Dreifaktorielle ANOVA für getrimmte Mittelwerte (%.0f%%-Trimmen)."
+
+msgid "Post Hoc Tests"
+msgstr "Post-hoc-Tests"
+
+msgid "Post Hoc Comparisons - %s"
+msgstr "Post-hoc-Vergleiche - %s"
+
+msgid "Difference"
+msgstr "Differenz"
+
+msgid "%.0f%% CI"
+msgstr "%.0f%% KI"
+
+msgid "Could not compute post hoc comparisons for %s."
+msgstr "Post-hoc-Vergleiche konnten für %s nicht berechnet werden."
+
+msgid "Post hoc comparisons are not available for the medians method."
+msgstr "Post-hoc-Vergleiche sind für die Median-Methode nicht verfügbar."
+
+msgid "p<sub>Hochberg</sub>"
+msgstr "p<sub>Hochberg</sub>"
+
+msgid "p<sub>Bonf</sub>"
+msgstr "p<sub>Bonf</sub>"
+
+msgid "p<sub>Holm</sub>"
+msgstr "p<sub>Holm</sub>"
+
+msgid "Descriptives"
+msgstr "Deskriptive Statistiken"
+
+msgid "Variable"
+msgstr "Variable"
+
+msgid "Robust Effect Sizes"
+msgstr "Robuste Effektgrößen"
+
+msgid "ξ"
+msgstr "ξ"
+
+msgid ""
+"ξ is the Algina-Keselman-Penfield robust standardised mean difference"
+"(WRS2::akp.effect)."
+msgstr ""
+"ξ ist die robuste standardisierte Mittelwertdifferenz nach Algina-Keselman-"
+"Penfield (WRS2::akp.effect)."
+
+msgid "Robust effect sizes are only computed for one-way designs."
+msgstr "Robuste Effektgrößen werden nur für einfaktorielle Designs berechnet."
+
+msgid "Need at least two factor levels to compute pairwise effect sizes."
+msgstr ""
+"Es werden mindestens zwei Faktorstufen benötigt, um paarweise Effektgrößen zu "
+"berechnen."
+
+msgid "Descriptives Plots"
+msgstr "Diagramme der deskriptiven Statistiken"
+
+msgid "Raincloud Plots"
+msgstr "Raincloud-Diagramme"
+
+msgid "Error while loading data: %s"
+msgstr "Fehler beim Laden der Daten: %s"
+
+msgid ""
+"Robust repeated measures ANOVA currently supports only one within-subjects"
+"factor."
+msgstr ""
+"Die robuste ANOVA mit Messwiederholung unterstützt derzeit nur einen "
+"Innersubjektfaktor."
+
+msgid ""
+"Robust repeated measures ANOVA currently supports at most one between-subjects"
+"factor."
+msgstr ""
+"Die robuste ANOVA mit Messwiederholung unterstützt derzeit höchstens einen "
+"Zwischensubjektfaktor."
+
+msgid ""
+"Median-based robust analysis is not currently supported for repeated measures"
+"designs. Please select Trimmed Means or Trimmed Means + Bootstrap."
+msgstr ""
+"Medianbasierte robuste Analysen werden derzeit für Designs mit "
+"Messwiederholung nicht unterstützt. Bitte wählen Sie 'Getrimmte Mittelwerte' "
+"oder 'Getrimmte Mittelwerte + Bootstrap'."
+
+msgid "Bootstrap mixed RM ANOVA failed:\\n%s"
+msgstr "Bootstrap-gemischte-RM-ANOVA fehlgeschlagen:\\n%s"
+
+msgid "Mixed RM ANOVA failed: %s"
+msgstr "Gemischte RM-ANOVA fehlgeschlagen: %s"
+
+msgid "Robust RM ANOVA failed: %s"
+msgstr "Robuste RM-ANOVA fehlgeschlagen: %s"
+
+msgid "Robust Repeated Measures ANOVA"
+msgstr "Robuste ANOVA mit Messwiederholung"
+
+msgid "Bootstrap with trimmed means (%.0f%% trimming, %d bootstrap samples)."
+msgstr ""
+"Bootstrap mit getrimmten Mittelwerten (%.0f%%-Trimmen, %d Bootstrap-"
+"Stichproben)."
+
+msgid ""
+"Reject H₀ if the test statistic exceeds the critical value %.3f (α = .05); no"
+"p-value is reported by this bootstrap procedure."
+msgstr ""
+"Lehnen Sie H₀ ab, wenn die Teststatistik den kritischen Wert %.3f (α = .05) "
+"überschreitet; von diesem Bootstrap-Verfahren wird kein p-Wert berichtet."
+
+msgid "Trimmed means (%.0f%% trimming)."
+msgstr "Getrimmte Mittelwerte (%.0f%%-Trimmen)."
+
+msgid "Robust post hoc tests are only available for within-subjects factors."
+msgstr "Robuste Post-hoc-Tests sind nur für Innersubjektfaktoren verfügbar."
+
+msgid "Post hoc tests failed: %s"
+msgstr "Post-hoc-Tests fehlgeschlagen: %s"
+
+msgid "Percentage Bend"
+msgstr "Percentage Bend"
+
+msgid "Winsorized"
+msgstr "Winsorisiert"
+
+msgid "Robust"
+msgstr "Robust"
+
+msgid "%s Correlation"
+msgstr "%s-Korrelation"
+
+msgid "r"
+msgstr "r"
+
+msgid "t"
+msgstr "t"
+
+msgid "n"
+msgstr "n"
+
+msgid "two-sided"
+msgstr "zweiseitig"
+
+msgid "greater"
+msgstr "größer"
+
+msgid "less"
+msgstr "kleiner"
+
+msgid "Alternative hypothesis: %s."
+msgstr "Alternativhypothese: %s."
+
+#, qt-format
+msgid "Computation failed for %1$s - %2$s: %3$s"
+msgstr "Berechnung fehlgeschlagen für %1$s - %2$s: %3$s"
+
+msgid "%s ***"
+msgstr "%s ***"
+
+msgid "%s **"
+msgstr "%s **"
+
+msgid "%s *"
+msgstr "%s *"
+
+msgid "* p < .05, ** p < .01, *** p < .001"
+msgstr "* p < .05, ** p < .01, *** p < .001"
+
+msgid "Scatter Plots"
+msgstr "Streudiagramme"
+
+#, qt-format
+msgid "%1$s - %2$s"
+msgstr "%1$s - %2$s"
+
+msgid "Plotting failed: %s"
+msgstr "Erstellung des Diagramms fehlgeschlagen: %s"
+
+msgid "Trimmed Mean"
+msgstr "Getrimmter Mittelwert"
+
+msgid "Median"
+msgstr "Median"
+
+msgid "Winsorized SD"
+msgstr "Winsorisierte SD"
+
+msgid "MAD"
+msgstr "MAD"
+
+msgid "Trimmed Mean shown without trimming because the medians method is selected."
+msgstr ""
+"Getrimmter Mittelwert ohne Trimmen dargestellt, da die Median-Methode "
+"ausgewählt ist."
+
+msgid "Trimmed Mean and Winsorized SD use %.0f%% trimming."
+msgstr "Getrimmter Mittelwert und Winsorisierte SD verwenden %.0f%%-Trimmen."
+
+msgid "Robust regression failed: %s"
+msgstr "Robuste Regression fehlgeschlagen: %s"
+
+msgid "Robust Regression Coefficients"
+msgstr "Koeffizienten der robusten Regression"
+
+msgid "Term"
+msgstr "Term"
+
+msgid "Estimate"
+msgstr "Schätzung"
+
+msgid "Std. Error"
+msgstr "Std. Fehler"
+
+msgid "%s%% CI"
+msgstr "%s%% KI"
+
+msgid "Huber M-estimation"
+msgstr "Huber-M-Schätzung"
+
+msgid "Bisquare M-estimation"
+msgstr "Bisquare-M-Schätzung"
+
+msgid "MM-estimation"
+msgstr "MM-Schätzung"
+
+msgid "M-estimation"
+msgstr "M-Schätzung"
+
+msgid "Method: %s. P-values computed via Wald test."
+msgstr "Methode: %s. P-Werte über den Wald-Test berechnet."
+
+msgid "Model Summary"
+msgstr "Modellzusammenfassung"
+
+msgid "Residual Scale"
+msgstr "Residualskala"
+
+msgid "Downweighted Obs."
+msgstr "Abgewogene Beob."
+
+msgid "Converged"
+msgstr "Konvergiert"
+
+msgid "Residuals vs. Fitted"
+msgstr "Residuen vs. Angepasste"
+
+msgid "Fitted values"
+msgstr "Angepasste Werte"
+
+msgid "Residuals"
+msgstr "Residuen"
+
+msgid "Q-Q Plot of Residuals"
+msgstr "Q-Q-Diagramm der Residuen"
+
+msgid "Robust Weights"
+msgstr "Robuste Gewichte"
+
+msgid "Observation"
+msgstr "Beobachtung"
+
+msgid "Weight"
+msgstr "Gewicht"
