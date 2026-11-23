@@ -220,7 +220,7 @@ RegressionLinearRobustInternal <- RegressionLinearInternal
   if (!is.null(jaspResults[["descriptivesTable"]])) return()
 
   table <- createJaspTable(title = gettext("Descriptives"))
-  table$dependOn(c("dependent", "covariates", "descriptivesTable", "descriptivesTrimProportion"))
+  table$dependOn(c("dependent", "covariates", "factors", "descriptivesTable", "descriptivesTrimProportion"))
   table$showSpecifiedColumnsOnly <- TRUE
   table$position <- 0.5
 
@@ -234,6 +234,9 @@ RegressionLinearRobustInternal <- RegressionLinearInternal
   numericVars <- c(options$dependent, unlist(options$covariates))
   numericVars <- numericVars[nzchar(numericVars)]
   tr <- options$descriptivesTrimProportion
+
+  # use the rows the model uses: MASS::rlm drops rows with a missing value in any model variable
+  dataset <- dataset[complete.cases(dataset[c(numericVars, unlist(options$factors))]), , drop = FALSE]
 
   for (v in numericVars) {
     stats <- .robustSummary(dataset[[v]], tr)

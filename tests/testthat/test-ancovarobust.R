@@ -104,3 +104,37 @@ test_that("Robust ANCOVA descriptives plot matches", {
   testPlot <- results[["state"]][["figures"]][[plotName]][["obj"]]
   jaspTools::expect_equal_plots(testPlot, "ancovarobust-descriptives")
 })
+
+# ---- Robust ANCOVA descriptives with missing values -----------------------
+
+test_that("Robust ANCOVA descriptives use only the rows the model uses", {
+  # rows 3 (group A) and 6 (group B) have no x and row 10 (group B) has no y;
+  # WRS2::ancova drops all three, so the descriptives must use 15 complete rows per group.
+  # Expected values computed in base R on those rows: trimmed mean and Winsorized SD with
+  # floor(0.2 * 15) = 3 values trimmed or Winsorized at each end, MAD = 1.4826 * median |x - median|.
+  dataset <- data.frame(
+    y = c(6.4, 8.1, 14, 7.9, 8.6, 15, 8.4, 7.4, 3.9, NA, 7.8, 6.3, 6.5, 5.8, 8.6, 6, 6,
+          7.1, 7.2, 7.8, 9.5, 7.9, 8.3, 7.4, 6.5, 5.9, 9.2, 6.2, 8.1, 6.4, 9, 7.7, 7.5),
+    x = c(8.9, 11.1, NA, 10.8, 8.8, NA, 11.7, 10.5, 10.9, 9.5, 9.1, 8.3, 10, 7.4, 11.2, 8.5, 7.1,
+          10.7, 9.1, 9.3, 13.1, 11.2, 11, 9.9, 8.8, 6.6, 9.5, 8.7, 9.8, 9.8, 10.2, 9.8, 8.1),
+    g = factor(c("A", "B", "A", "A", "B", "B", "A", "B", "A", "B", "B", "A", "B", "A", "B", "A", "B",
+                 "A", "B", "A", "B", "A", "B", "A", "B", "A", "B", "A", "B", "A", "B", "A", "B"))
+  )
+  options <- .initAncovaRobustOptions()
+  options$dependent      <- "y"
+  options$fixedFactors   <- "g"
+  options$covariates     <- "x"
+  options$robustMethod   <- "trimmedMeans"
+  options$trimProportion <- 0.2
+  options$descriptivesTable <- TRUE
+
+  set.seed(1)
+  results <- jaspTools::runAnalysis("AncovaRobust", dataset, options)
+
+  table <- results[["results"]][["descriptivesTable"]][["data"]]
+  jaspTools::expect_equal_tables(table,
+    list("A", 1.03782, 6.81111111111111, 6.4, 15, "y", 0.789092305542683,
+         "A", 1.63086, 9.6, 9.8, 15, "x", 0.977021713459547,
+         "B", 1.03782, 7.95555555555556, 8.1, 15, "y", 0.6007931265855,
+         "B", 1.4826, 9.77777777777778, 9.8, 15, "x", 0.906694677438463))
+})

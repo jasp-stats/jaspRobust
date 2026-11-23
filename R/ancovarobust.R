@@ -499,10 +499,13 @@ AncovaRobustInternal <- AncovaInternal
   groupKeys <- do.call(interaction, c(lapply(factors, function(f) dataset[[f]]), drop = TRUE))
   groupLvls <- levels(groupKeys)
 
+  # use the rows the model uses: WRS2 drops rows with a missing value in any model variable
+  complete <- complete.cases(dataset[c(numericVars, factors)])
+
   for (lvl in groupLvls) {
     parts <- strsplit(lvl, ".", fixed = TRUE)[[1]]
     base  <- as.list(setNames(parts, factors))
-    rowsForCell <- dataset[groupKeys == lvl, , drop = FALSE]
+    rowsForCell <- dataset[groupKeys == lvl & complete, , drop = FALSE]
 
     for (v in numericVars) {
       stats <- .robustSummary(rowsForCell[[v]], tr)
