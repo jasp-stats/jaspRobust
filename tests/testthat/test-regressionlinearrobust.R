@@ -135,3 +135,56 @@ test_that("Robust regression diagnostic plots match", {
   testPlot <- results[["state"]][["figures"]][[plotName]][["obj"]]
   jaspTools::expect_equal_plots(testPlot, "regrobust-weights")
 })
+
+# ---- Descriptives with missing values -------------------------------------
+
+test_that("Robust regression descriptives use only the rows the model uses", {
+  # rows 3 and 6 have no x and row 10 has no y; MASS::rlm drops all three,
+  # so the descriptives must use the same 30 complete rows.
+  # Expected values computed in base R on those 30 rows: trimmed mean and Winsorized SD with
+  # floor(0.2 * 30) = 6 values trimmed or Winsorized at each end, MAD = 1.4826 * median |x - median|.
+  dataset <- data.frame(
+    y = c(6.4, 8.1, 14, 7.9, 8.6, 15, 8.4, 7.4, 3.9, NA, 7.8, 6.3, 6.5, 5.8, 8.6, 6, 6,
+          7.1, 7.2, 7.8, 9.5, 7.9, 8.3, 7.4, 6.5, 5.9, 9.2, 6.2, 8.1, 6.4, 9, 7.7, 7.5),
+    x = c(8.9, 11.1, NA, 10.8, 8.8, NA, 11.7, 10.5, 10.9, 9.5, 9.1, 8.3, 10, 7.4, 11.2, 8.5, 7.1,
+          10.7, 9.1, 9.3, 13.1, 11.2, 11, 9.9, 8.8, 6.6, 9.5, 8.7, 9.8, 9.8, 10.2, 9.8, 8.1)
+  )
+  options <- .initRegressionRobustOptions()
+  options$dependent  <- "y"
+  options$covariates <- "x"
+  options$descriptivesTable <- TRUE
+
+  set.seed(1)
+  results <- jaspTools::runAnalysis("RegressionLinearRobust", dataset, options)
+
+  table <- results[["results"]][["descriptivesTable"]][["data"]]
+  jaspTools::expect_equal_tables(table,
+    list(1.40847, 7.35, 7.45, 30, "y", 0.823009615731315,
+         1.4826, 9.7, 9.8, 30, "x", 0.899655106329547))
+})
+
+test_that("Robust regression descriptives drop rows with a missing factor value", {
+  # rows 1, 2 and 4 have no g as well; MASS::rlm drops these 3 and rows 3, 6 and 10, leaving 27 rows.
+  # Expected values computed in base R on those 27 rows, as in the test above (floor(0.2 * 27) = 5).
+  dataset <- data.frame(
+    y = c(6.4, 8.1, 14, 7.9, 8.6, 15, 8.4, 7.4, 3.9, NA, 7.8, 6.3, 6.5, 5.8, 8.6, 6, 6,
+          7.1, 7.2, 7.8, 9.5, 7.9, 8.3, 7.4, 6.5, 5.9, 9.2, 6.2, 8.1, 6.4, 9, 7.7, 7.5),
+    x = c(8.9, 11.1, NA, 10.8, 8.8, NA, 11.7, 10.5, 10.9, 9.5, 9.1, 8.3, 10, 7.4, 11.2, 8.5, 7.1,
+          10.7, 9.1, 9.3, 13.1, 11.2, 11, 9.9, 8.8, 6.6, 9.5, 8.7, 9.8, 9.8, 10.2, 9.8, 8.1),
+    g = factor(c(NA, NA, "A", NA, "B", "B", "A", "B", "A", "B", "B", "A", "B", "A", "B", "A", "B",
+                 "A", "B", "A", "B", "A", "B", "A", "B", "A", "B", "A", "B", "A", "B", "A", "B"))
+  )
+  options <- .initRegressionRobustOptions()
+  options$dependent  <- "y"
+  options$covariates <- "x"
+  options$factors    <- "g"
+  options$descriptivesTable <- TRUE
+
+  set.seed(1)
+  results <- jaspTools::runAnalysis("RegressionLinearRobust", dataset, options)
+
+  table <- results[["results"]][["descriptivesTable"]][["data"]]
+  jaspTools::expect_equal_tables(table,
+    list(1.4826, 7.32352941176471, 7.4, 27, "y", 0.88522213800731,
+         1.4826, 9.61176470588235, 9.8, 27, "x", 0.936167856962765))
+})
