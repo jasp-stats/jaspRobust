@@ -93,6 +93,9 @@ Defaults to \code{FALSE}.}
 \item{robustMethod, }{Select the robust estimation method to use for the analysis.}
 
 \item{trimProportion, }{The proportion of observations to trim from each tail. Default is 0.2 (20%% trimming).}
+
+\item{...}{options that are not an argument of this function: the options of an older version of the
+analysis, to be used together with `version`. They are upgraded to the options of this version.}
 }
 \description{
 Robust ANCOVA compares trimmed means of exactly two groups while adjusting for a covariate, using a nonparametric running interval smoother. No parametric assumptions about homogeneity of regression slopes or equal variances are required. Without a covariate, a robust one-way ANOVA is performed instead.

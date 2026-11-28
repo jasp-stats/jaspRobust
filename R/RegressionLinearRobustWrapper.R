@@ -43,6 +43,8 @@
 #'    Defaults to \code{FALSE}.
 #' @param weightsPlot, Shows the weight assigned to each observation during estimation. Downweighted observations (weight < 1) indicate potential outliers.
 #'    Defaults to \code{FALSE}.
+#' @param ... options that are not an argument of this function: the options of an older version of the
+#'   analysis, to be used together with `version`. They are upgraded to the options of this version.
 RegressionLinearRobust <- function(
           data = NULL,
           version = "1",
@@ -59,9 +61,15 @@ RegressionLinearRobust <- function(
           plotWidth = 480,
           residualQqPlot = FALSE,
           residualVsFittedPlot = FALSE,
-          weightsPlot = FALSE) {
+          weightsPlot = FALSE,
+          ...) {
 
-   options <- mget(names(formals(sys.function())), envir = environment(), inherits = FALSE)
+   options <- mget(setdiff(names(formals(sys.function())), "..."), envir = environment(), inherits = FALSE)
+   options <- c(options, list(...))
+   if (!all(nzchar(names(options))) || anyDuplicated(names(options)))
+      stop("The extra options given to RegressionLinearRobust must be named, each name once.")
+   if (...length() > 0L && missing(version))
+      stop("RegressionLinearRobust has no option ", paste(names(list(...)), collapse = ", "), ". Options of an older version need the `version` they were written for.")
    options[["data"]] <- NULL
    options[["version"]] <- NULL
 

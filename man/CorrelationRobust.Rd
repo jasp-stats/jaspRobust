@@ -16,7 +16,8 @@ CorrelationRobust(
   scatterPlot = FALSE,
   significanceFlagged = FALSE,
   trimProportion = 0.2,
-  variables = list(types = list(), value = list())
+  variables = list(types = list(), value = list()),
+  ...
 )
 }
 \arguments{
@@ -44,6 +45,9 @@ Defaults to \code{FALSE}.}
 \item{trimProportion, }{Bending constant β for percentage bend correlation, or Winsorization proportion for the Winsorized correlation. Also used for the descriptives table. Default is 0.2.}
 
 \item{variables, }{Two or more continuous variables. All pairwise robust correlations are reported.}
+
+\item{...}{options that are not an argument of this function: the options of an older version of the
+analysis, to be used together with `version`. They are upgraded to the options of this version.}
 }
 \description{
 Robust correlation computes percentage bend or Winsorized correlations (WRS2 package). These methods are resistant to outliers that can distort Pearson's r.

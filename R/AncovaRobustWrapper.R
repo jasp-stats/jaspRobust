@@ -42,6 +42,8 @@
 #' @param rainCloudSeparatePlots, By placing an independent variable in this box, different plots corresponding to the different levels of the independent variable will be displayed.
 #' @param robustMethod, Select the robust estimation method to use for the analysis.
 #' @param trimProportion, The proportion of observations to trim from each tail. Default is 0.2 (20%% trimming).
+#' @param ... options that are not an argument of this function: the options of an older version of the
+#'   analysis, to be used together with `version`. They are upgraded to the options of this version.
 AncovaRobust <- function(
           data = NULL,
           version = "1",
@@ -64,9 +66,15 @@ AncovaRobust <- function(
           rainCloudSeparatePlots = list(types = list(), value = ""),
           rainCloudYAxisLabel = "",
           robustMethod = "trimmedMeans",
-          trimProportion = 0.2) {
+          trimProportion = 0.2,
+          ...) {
 
-   options <- mget(names(formals(sys.function())), envir = environment(), inherits = FALSE)
+   options <- mget(setdiff(names(formals(sys.function())), "..."), envir = environment(), inherits = FALSE)
+   options <- c(options, list(...))
+   if (!all(nzchar(names(options))) || anyDuplicated(names(options)))
+      stop("The extra options given to AncovaRobust must be named, each name once.")
+   if (...length() > 0L && missing(version))
+      stop("AncovaRobust has no option ", paste(names(list(...)), collapse = ", "), ". Options of an older version need the `version` they were written for.")
    options[["data"]] <- NULL
    options[["version"]] <- NULL
 

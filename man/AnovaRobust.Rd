@@ -107,6 +107,9 @@ Defaults to \code{FALSE}.}
 \item{robustMethod, }{Select the robust estimation method to use for the analysis.}
 
 \item{trimProportion, }{The proportion of observations to trim from each tail. Default is 0.2 (20%% trimming).}
+
+\item{...}{options that are not an argument of this function: the options of an older version of the
+analysis, to be used together with `version`. They are upgraded to the options of this version.}
 }
 \description{
 Robust ANOVA analyzes differences between group means using robust methods from the WRS2 package. These methods do not assume normality or homogeneity of variances.

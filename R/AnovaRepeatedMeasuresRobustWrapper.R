@@ -51,6 +51,8 @@
 #' @param repeatedMeasuresFactors, The within-subjects (repeated measures) variable. Define one factor and label its levels. Robust RM ANOVA currently supports a single within-subjects factor.
 #' @param robustMethod, Select the robust estimation method to use for the analysis.
 #' @param trimProportion, The proportion of observations to trim from each tail. Default is 0.2 (20%% trimming).
+#' @param ... options that are not an argument of this function: the options of an older version of the
+#'   analysis, to be used together with `version`. They are upgraded to the options of this version.
 AnovaRepeatedMeasuresRobust <- function(
           data = NULL,
           version = "1",
@@ -80,9 +82,15 @@ AnovaRepeatedMeasuresRobust <- function(
           repeatedMeasuresCells = list("", ""),
           repeatedMeasuresFactors = list(list(levels = list("Level 1", "Level 2"), name = "RM Factor 1")),
           robustMethod = "trimmedMeans",
-          trimProportion = 0.2) {
+          trimProportion = 0.2,
+          ...) {
 
-   options <- mget(names(formals(sys.function())), envir = environment(), inherits = FALSE)
+   options <- mget(setdiff(names(formals(sys.function())), "..."), envir = environment(), inherits = FALSE)
+   options <- c(options, list(...))
+   if (!all(nzchar(names(options))) || anyDuplicated(names(options)))
+      stop("The extra options given to AnovaRepeatedMeasuresRobust must be named, each name once.")
+   if (...length() > 0L && missing(version))
+      stop("AnovaRepeatedMeasuresRobust has no option ", paste(names(list(...)), collapse = ", "), ". Options of an older version need the `version` they were written for.")
    options[["data"]] <- NULL
    options[["version"]] <- NULL
 

@@ -153,6 +153,9 @@ Defaults to \code{FALSE}.}
 
 \item{weightsPlot, }{Shows the weight assigned to each observation during estimation. Downweighted observations (weight < 1) indicate potential outliers.
 Defaults to \code{FALSE}.}
+
+\item{...}{options that are not an argument of this function: the options of an older version of the
+analysis, to be used together with `version`. They are upgraded to the options of this version.}
 }
 \description{
 Robust linear regression uses M-estimation (MASS::rlm) to fit a linear model that is resistant to outliers. Unlike OLS, it iteratively downweights observations with large residuals.
